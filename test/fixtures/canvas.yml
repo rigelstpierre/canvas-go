@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  orientation: MyString
+  size: MyString
+  border: MyString
+  rolled_canvas: false
+  fancy_edges: false
+
+two:
+  orientation: MyString
+  size: MyString
+  border: MyString
+  rolled_canvas: false
+  fancy_edges: false

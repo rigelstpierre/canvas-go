@@ -1,0 +1,10 @@
+== Canvas Go
+
+Canvas Go is a Rails 3.2.8 application create for Jose Rubalcaba, Michael Ko, and Simon Poonka.
+
+= Getting Started
+
+1. In the command promt run:
+  Bundle Install
+2. Run the database migrations
+  rake db:migrate

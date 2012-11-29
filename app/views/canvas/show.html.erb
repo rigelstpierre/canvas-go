@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orientation:</b>
+  <%= @canva.orientation %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @canva.size %>
+</p>
+
+<p>
+  <b>Border:</b>
+  <%= @canva.border %>
+</p>
+
+<p>
+  <b>Rolled canvas:</b>
+  <%= @canva.rolled_canvas %>
+</p>
+
+<p>
+  <b>Fancy edges:</b>
+  <%= @canva.fancy_edges %>
+</p>
+
+
+<%= link_to 'Edit', edit_canva_path(@canva) %> |
+<%= link_to 'Back', canvas_path %>

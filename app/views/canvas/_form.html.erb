@@ -1,0 +1,110 @@
+<div class="container wrap">
+      <section class="half">
+
+        <div class="options">
+          <h3><span>Choose Your Canvas</span></h3>
+
+          <!-- orientation and crop -->
+          <div class="effect wrap">
+            <div class="name">Orientation</div>
+            <div class="option-orientation">
+              <input type="image" src="/assets/icon-landscape.png" name="photoOrientation" class="active" value="landscape">
+              <input type="image" src="/assets/icon-portrait.png" name="photoOrientation" value="portrait">
+              <input type="image" src="/assets/icon-square.png" name="photoOrientation" value="square">
+              <input type="image" src="/assets/icon-panoramic.png" name="photoOrientation" class="last" value="panoramic">
+              <button class="red">Crop</button>
+            </div>
+          </div>
+
+          <!-- prices -->
+          <div class="effect wrap">
+            <div class="name">Size</div>
+            <div class="option-orientation">
+              <input type="radio" name="portraitSizes" id="p-size1" value="p10x12" /><label for="p-size1">10" x 12" <span class="red">$27.99</span></label>
+              <input type="radio" name="portraitSizes" id="p-size2" value="p10x14" /><label for="p-size2">10" x 14" <span class="red">$32.99</span></label>
+              <input type="radio" name="portraitSizes" id="p-size3" value="p12x16" /><label for="p-size3">12" x 16" <span class="red">$33.60</span></label>
+              <input type="radio" name="portraitSizes" id="p-size4" value="p12x18" /><label for="p-size4">12" x 18" <span class="red">$47.99</span></label>
+              <input type="radio" name="portraitSizes" id="p-size" value="" /><label for="p-size"> <span class="red"></span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="options">
+          <h3><span>Adjust Your Photo</span></h3>
+        </div>
+
+        <!-- special effects -->
+        <div class="effect wrap">
+          <div class="name">Effects</div>
+          <div class="option-effects">
+            <input type="image" src="<%= @canva.image.thumb %>" name="photoEffect" class="active" value="vintage">
+            <input type="image" src="<%= @canva.image.desaturated_thumb %>" name="photoEffect" value="vintage">
+            <input type="image" src="<%= @canva.image.thumb %>" name="photoEffect" value="vintage">
+            <input type="image" src="<%= @canva.image.thumb %>" name="photoEffect" class="last" value="vintage">
+          </div>
+        </div>
+
+        <!-- border -->
+        <div class="effect wrap">
+          <div class="name">Border<span class="mark">?</span></div>
+          <div class="option">
+            <input type="button" name="borderColors" class="none active" value="none">
+            <input type="button" name="borderColors" class="black" value="black">
+            <input type="button" name="borderColors" class="red" value="red">
+            <input type="button" name="borderColors" class="blue" value="blue">
+          </div>
+          <div class="pricing">$15.50</div>
+        </div>
+
+        <!-- rolled canvas -->
+        <div class="effect wrap">
+          <div class="name">Rolled Canvas<span class="mark">?</span></div>
+          <div class="option">
+            <input type="button" name="rolledCanvas" class="active" value="no">
+            <input type="button" name="rolledCanvas" value="yes">
+          </div>
+          <div class="pricing">$10.00</div>
+        </div>
+
+        <!-- fancy edges -->
+        <div class="effect wrap">
+          <div class="name">Fancy Edges<span class="mark">?</span></div>
+          <div class="option">
+            <input type="button" name="fancyEdges" class="active" value="no">
+            <input type="button" name="fancyEdges" value="yes">
+          </div>
+          <div class="pricing">$5.50</div>
+        </div>
+
+      </section><!-- end customizations -->
+
+
+      <section class="half last">
+        <!-- image preview -->
+        <img src="<%= @canva.image.preview %>" style="border: 3px #000 solid;">
+
+        <!-- items table -->
+        <div class="price wrap">
+          <h3><span>Print Total</span></h3>
+          <ul>
+            <li class="addBorderColors">
+              <div class="item">Border Color</div> <div class="cost">$15.50</div></li>
+            <li class="addRolledCanvas">
+              <div class="item">Rolled Canvas</div> <div class="cost">$10.00</div></li>
+            <li class="addFancyEdges">
+              <div class="item">Fancy Edges</div> <div class="cost">$5.50</div></li>
+          </ul>
+        </div>
+
+        <!-- checkout and total -->
+        <div class="total-container wrap">
+          <button class="red">Proceed to Checkout</button>
+          <div class="total">$0.00</div>
+        </div>
+
+      </section><!-- end image and total -->
+    </div>
+
+  </section>
+<div class="border"></div>
+<!-- end features -->

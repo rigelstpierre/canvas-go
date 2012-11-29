@@ -1,0 +1,78 @@
+<% if @order.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+<% end %>
+<div class="border"></div>
+  <section class="main-container">
+    <div class="container">
+
+      <!-- list of steps -->
+      <div class="container wrap">
+        <div class="step current">
+          <a href="index.html"><h2><span>1</span> Upload your photograph</h2></a>
+        </div>
+
+        <div class="step">
+          <a href="edit.html"><h2><span>2</span> Edit &amp; preview</h2></a>
+        </div>
+
+        <div class="step last">
+          <a href="checkout.html"><h2><span>3</span> Complete your purchase</h2></a>
+        </div>
+      </div>
+
+      <!-- feature icons & description -->
+      <div class="step current ">
+        <div class="icon upload"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam ante, placerat sed interdum sit amet, pretium et erat. Sed erat.</p>
+        <p><a href="#">Get Started &rarr;</a></p>
+      </div>
+
+      <div class="step">
+        <div class="icon edit"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p><a href="#">Pricing &amp; Features &rarr;</a></p>
+      </div>
+
+      <div class="step last">
+        <div class="icon complete"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam ante, placerat sed interdum.</p>
+        <p><a href="#">Shipping Options &rarr;</a></p>
+      </div>
+
+      <a class="cta" rel="leanModal" name="modalHome" href="#modalHome">With Close Button</a>
+    </div>
+  </section>
+<div class="border"></div>
+<!-- end features -->
+
+<div class="container wrap">
+  <div class="intro">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Consectetur adipiscing elit. In quam ante, placerat sed interdum sit amet, pretium et erat. Sed erat lectus, molestie eu varius eget, molestie ac urna. Donec gravida lectus quis enim volutpat cursus. Quisque eget lacus at lorem facilisis adipiscing.</p>
+    <p>Phasellus id viverra lacus. Sed condimentum massa vel orci porttitor suscipit. Cras aliquet metus elit. Mauris commodo tristique dolor sit amet ullamcorper.</p>
+  </div>
+
+  <div class="testimonial">
+    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam ante, placerat sed interdum sit amet, pretium et erat. Sed erat lectus, molestie eu varius eget, molestie ac urna.”</p>
+    <p class="author">- NICK QUEBBEMAN, CHICAGO</p>
+  </div>
+</div>
+<!-- end intro & testimonial -->
+
+<div class="container">
+  <h1>What Some Others Have Printed</h1>
+</div>
+
+
+<!-- modal -->
+<div id="modalHome" class="modal">
+  <h3>Upload Your Photo</h3>
+  <p>Consectetur adipiscing elit. In quam ante, placerat sed interdum sit amet, pretium et erat. Sed erat lectus, molestie eu varius eget, molestie ac urna. Donec gravida lectus quis enim volutpat cursus.</p>
+  <%= render 'form' %>
+</div>
