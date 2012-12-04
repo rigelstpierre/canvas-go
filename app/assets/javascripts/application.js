@@ -13,3 +13,30 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+
+  $('#portrait-sizes').hide();
+  $('#square-sizes').hide();
+  $('#panoramic-sizes').hide();
+
+  $('#landscape').click(function() {
+    $('.sizes').fadeOut('400');
+    $('#landcape-sizes').fadeIn('800');
+  });
+
+  $('#portrait').click(function() {
+    $('.sizes').fadeOut('400');
+    $('#portrait-sizes').fadeIn('800');
+  });
+
+  $('#square').click(function() {
+    $('.sizes').fadeOut('400');
+    $('#square-sizes').fadeIn('800');
+  });
+
+  $('#panoramic').click(function() {
+    $('.sizes').fadeOut('400');
+    $('#panoramic-sizes').fadeIn('800');
+  });
+});

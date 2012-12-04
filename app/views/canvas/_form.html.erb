@@ -8,10 +8,10 @@
           <div class="effect wrap">
             <div class="name">Orientation</div>
             <div class="option-orientation">
-              <input type="image" src="/assets/icon-landscape.png" name="photoOrientation" class="active" value="landscape">
-              <input type="image" src="/assets/icon-portrait.png" name="photoOrientation" value="portrait">
-              <input type="image" src="/assets/icon-square.png" name="photoOrientation" value="square">
-              <input type="image" src="/assets/icon-panoramic.png" name="photoOrientation" class="last" value="panoramic">
+              <input type="image" src="/assets/icon-landscape.png" name="photoOrientation" class="active" value="landscape" id="landscape">
+              <input type="image" src="/assets/icon-portrait.png" name="photoOrientation" value="portrait" id="portrait">
+              <input type="image" src="/assets/icon-square.png" name="photoOrientation" value="square" id="square">
+              <input type="image" src="/assets/icon-panoramic.png" name="photoOrientation" class="last" value="panoramic" id="panoramic">
               <button class="red">Crop</button>
             </div>
           </div>
@@ -19,7 +19,46 @@
           <!-- prices -->
           <div class="effect wrap">
             <div class="name">Size</div>
-            <div class="option-orientation">
+            <div class="option-orientation sizes" id="landcape-sizes">
+              <input type="radio" name="landscapeSizes" id="l-size1" value="l12x10" /><label for="l-size1">12" x 10" <span class="red">$27.99</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size2" value="l14x10" /><label for="l-size2">14" x 10" <span class="red">$32.99</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size3" value="l16x11" /><label for="l-size3">16" x 12" <span class="red">$33.60</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size4" value="l18x12" /><label for="l-size4">18" x 12" <span class="red">$47.99</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size5" value="l20x16" /><label for="l-size5">20" x 16" <span class="red">$44.00</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size6" value="l24x18" /><label for="l-size6">24" x 18" <span class="red">$53.00</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size7" value="l24X20" /><label for="l-size7">24" x 20" <span class="red">$62.00</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size8" value="l30x20" /><label for="l-size8">30" x 20" <span class="red">$68.00</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size9" value="l36x20" /><label for="l-size9">36" x 20" <span class="red">$75.00</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size10" value="l36x24" /><label for="l-size10">36" x 24" <span class="red">$75.00</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size11" value="l40x30" /><label for="l-size11">40" x 30" <span class="red">$155.00</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size12" value="l48x36" /><label for="l-size12">48" x 36" <span class="red">$189.00</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size13" value="l48x40" /><label for="l-size13">48" x 40" <span class="red">$264.99</span></label>
+              <input type="radio" name="landscapeSizes" id="l-size14" value="l60x40" /><label for="l-size14">60" x 40" <span class="red">$294.99</span></label>
+            </div>
+            <div class="option-orientation sizes" id="portrait-sizes">
+              <input type="radio" name="landscapeSizes" id="p-size1" value="p10x12" /><label for="p-size1">10" x 12" <span class="red">$27.99</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size2" value="p10x14" /><label for="p-size2">10" x 14" <span class="red">$32.99</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size3" value="p12x16" /><label for="p-size3">12" x 16" <span class="red">$33.60</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size4" value="p12x18" /><label for="p-size4">12" x 18" <span class="red">$47.99</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size5" value="p16x20" /><label for="p-size4">16" x 20" <span class="red">$44.00</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size6" value="p18x24" /><label for="p-size4">18" x 24" <span class="red">$53.00</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size7" value="p20X24" /><label for="p-size4">20" x 24" <span class="red">$62.00</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size8" value="p20x30" /><label for="p-size4">20" x 30" <span class="red">$68.00</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size9" value="p20x36" /><label for="p-size4">20" x 36" <span class="red">$75.00</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size10" value="p24x36" /><label for="p-size4">24" x 36" <span class="red">$75.00</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size11" value="p30x40" /><label for="p-size4">30" x 40" <span class="red">$155.00</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size12" value="p36x48" /><label for="p-size4">36" x 48" <span class="red">$189.00</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size13" value="p40x48" /><label for="p-size4">40" x 48" <span class="red">$264.99</span></label>
+              <input type="radio" name="landscapeSizes" id="p-size14" value="p40x60" /><label for="p-size4">40" x 60" <span class="red">$294.99</span></label>
+            </div>
+            <div class="option-orientation sizes" id="square-sizes">
+              <input type="radio" name="portraitSizes" id="p-size1" value="p10x12" /><label for="p-size1">10" x 12" <span class="red">$27.99</span></label>
+              <input type="radio" name="portraitSizes" id="p-size2" value="p10x14" /><label for="p-size2">10" x 14" <span class="red">$32.99</span></label>
+              <input type="radio" name="portraitSizes" id="p-size3" value="p12x16" /><label for="p-size3">12" x 16" <span class="red">$33.60</span></label>
+              <input type="radio" name="portraitSizes" id="p-size4" value="p12x18" /><label for="p-size4">12" x 18" <span class="red">$47.99</span></label>
+              <input type="radio" name="portraitSizes" id="p-size" value="" /><label for="p-size"> <span class="red"></span></label>
+            </div>
+            <div class="option-orientation sizes" id="panoramic-sizes">
               <input type="radio" name="portraitSizes" id="p-size1" value="p10x12" /><label for="p-size1">10" x 12" <span class="red">$27.99</span></label>
               <input type="radio" name="portraitSizes" id="p-size2" value="p10x14" /><label for="p-size2">10" x 14" <span class="red">$32.99</span></label>
               <input type="radio" name="portraitSizes" id="p-size3" value="p12x16" /><label for="p-size3">12" x 16" <span class="red">$33.60</span></label>
@@ -39,8 +78,8 @@
           <div class="option-effects">
             <input type="image" src="<%= @canva.image.thumb %>" name="photoEffect" class="active" value="vintage">
             <input type="image" src="<%= @canva.image.desaturated_thumb %>" name="photoEffect" value="vintage">
-            <input type="image" src="<%= @canva.image.thumb %>" name="photoEffect" value="vintage">
-            <input type="image" src="<%= @canva.image.thumb %>" name="photoEffect" class="last" value="vintage">
+<!--             <input type="image" src="<%= @canva.image.thumb %>" name="photoEffect" value="vintage">
+            <input type="image" src="<%= @canva.image.thumb %>" name="photoEffect" class="last" value="vintage"> -->
           </div>
         </div>
 
